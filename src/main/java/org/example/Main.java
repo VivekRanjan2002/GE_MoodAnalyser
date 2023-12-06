@@ -9,5 +9,6 @@ public class Main {
         MoodAnalyser mood2= new MoodAnalyser("I am in Happy Mood"); // HAPPY
         MoodAnalyser mood3= new MoodAnalyser("I am in Any Mood");   // HAPPY
         MoodAnalyser mood4= new MoodAnalyser(null);      // HAPPY
+        MoodAnalyser mood5= new MoodAnalyser("");       // HAPPY
         }
     }
