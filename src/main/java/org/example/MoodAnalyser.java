@@ -15,7 +15,13 @@ public class MoodAnalyser {
     @return : String return mood HAPPY or SAD accordingly
      */
     private String MoodAnalyse(){
-        if(message.equals("I am in Sad Mood")) return "SAD";
+        String sad= "I am in Sad Mood";
+        try {
+            if (message.equals(sad)) return "SAD";
+        }
+        catch (Exception e){
+            return "HAPPY";
+        }
         return "HAPPY";
     }
 }
