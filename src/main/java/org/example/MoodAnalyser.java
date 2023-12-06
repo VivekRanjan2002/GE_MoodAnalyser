@@ -1,13 +1,20 @@
 package org.example;
 
 public class MoodAnalyser {
+    private String message;
+    public MoodAnalyser(){
+    message="";
+    }
+    public MoodAnalyser(String message){
+        this.message=message;
+        System.out.println(MoodAnalyse());
+    }
 
     /*
     @desc: analyse mood according to the message given by user
-    @params: String Message
     @return : String return mood HAPPY or SAD accordingly
      */
-    public String MoodAnalyse(String message){
+    private String MoodAnalyse(){
         if(message.equals("I am in Sad Mood")) return "SAD";
         return "HAPPY";
     }
